@@ -7,11 +7,7 @@ using namespace std;
 
 int SerialPortOpen()
 {
-    // open serial port
-    /*
-    Hari Bhogala <17-Mar-2023> will the port be same all the time?
-    why it is opening port though it is not connected through serial port?
-    */
+  
     fd = open("/dev/ttyS0", O_RDWR | O_NOCTTY);
     if (fd == -1)
     {
